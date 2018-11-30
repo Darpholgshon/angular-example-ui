@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'tv-tasc-admin-ui-v2';
+  title = 'T.A.S.C. Admin (v2)';
 }
