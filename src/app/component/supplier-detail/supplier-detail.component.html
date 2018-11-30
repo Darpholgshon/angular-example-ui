@@ -1,0 +1,9 @@
+<div *ngIf="supplier">
+  <h2>{{supplier.name}} Details</h2>
+  <div><span>id: </span>{{supplier.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="supplier.name" placeholder="name">
+    </label>
+  </div>
+</div>

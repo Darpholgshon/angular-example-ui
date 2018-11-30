@@ -1,20 +1,28 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {FormsModule} from '@angular/forms'; // <-- NgModel lives here
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { SupplierComponent } from './supplier/supplier.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {SupplierComponent} from './component/supplier/supplier.component';
+import {SupplierDetailComponent} from './component/supplier-detail/supplier-detail.component';
+import {SupplierService} from "./service/supplier.service";
+import { MessagesComponent } from './component/messages/messages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SupplierComponent
+    SupplierComponent,
+    SupplierDetailComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
