@@ -8,13 +8,15 @@ import {SupplierComponent} from './component/supplier/supplier.component';
 import {SupplierDetailComponent} from './component/supplier-detail/supplier-detail.component';
 import {SupplierService} from "./service/supplier.service";
 import { MessagesComponent } from './component/messages/messages.component';
+import { DashboardComponent } from './component/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SupplierComponent,
     SupplierDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

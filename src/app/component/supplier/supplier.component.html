@@ -1,8 +1,8 @@
 <h2>Suppliers</h2>
 <ul class="supplier">
-  <li *ngFor="let supplier of suppliers" (click)="onSelect(supplier)" [class.selected]="supplier === selected">
-    <span class="badge">{{supplier.id}}</span> {{supplier.name}}
+  <li *ngFor="let supplier of suppliers">
+    <a routerLink="/supplier/{{supplier.id}}">
+      <span class="badge">{{supplier.id}}</span> {{supplier.name}}
+    </a>
   </li>
 </ul>
-
-<app-supplier-detail [supplier]="selected"></app-supplier-detail>

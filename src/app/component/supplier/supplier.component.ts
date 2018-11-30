@@ -12,13 +12,7 @@ export class SupplierComponent implements OnInit {
 
   suppliers: Supplier[];
 
-  selected: Supplier;
-
   constructor(private supplierService: SupplierService) {
-  }
-
-  onSelect(selected: Supplier): void {
-    this.selected = selected;
   }
 
   ngOnInit() {
